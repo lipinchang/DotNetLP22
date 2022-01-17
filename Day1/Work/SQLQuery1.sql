@@ -23,3 +23,15 @@ drop column anotherColumn
 
 drop table tblLocation
 
+create table tblEmployee
+(EmployeeID int identity(101,1) primary key,  --seed/starting val 101, increase by 1
+Name varchar(20) not null,
+Phone varchar(15),
+Location varchar(20) references tblLocation(locationName),  --long ver. Location varchar(20) foreign key fk_EmpLocation references tblLocation(locationName),
+Age int,
+Email varchar(100),
+JoiningDate DateTime,
+Role varchar(15) check (role in ('Manager','Developer', 'Sr. Developer','Tester' ))
+)
+
+--sp_Help tblEmployee
