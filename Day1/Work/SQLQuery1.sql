@@ -34,14 +34,19 @@ JoiningDate DateTime,
 Role varchar(15) check (role in ('Manager','Developer', 'Sr. Developer','Tester' ))
 )
 
---sp_Help tblEmployee
+sp_Help tblEmployee
 
 create table tblSkill
 (skillName varchar(20) constraint pk_skill primary key,
 skillDescription varchar(100))
 
+sp_Help tblSkill
+
 create table tblEmployeeSkill
-(EmpID int constraint fk_empSkill foreign key references tblEmployee(EmployeeID),
-Skill varchar(20) references tblSkill(skillName),
+(EmpID int constraint fk_empSkill foreign key references tblEmployee(EmployeeID),	--way 1 of fk, custom fk name
+Skill varchar(20) references tblSkill(skillName),	--way 2 of fk, auto fk name
 SkillLevel float,
-primary key(EmpID, Skill))
+primary key(EmpID, Skill)	--auto add pk name if not specified
+)
+
+sp_Help tblEmployeeSkill
