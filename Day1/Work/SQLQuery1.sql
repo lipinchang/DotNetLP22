@@ -50,3 +50,31 @@ primary key(EmpID, Skill)	--auto add pk name if not specified
 )
 
 sp_Help tblEmployeeSkill
+
+insert into tblLocation values ('xyz','123')
+insert into tblLocation (zipcode, locationName)values ('333','zzz')
+
+select * from tblLocation
+
+insert into tblEmployee(Name, Location, Age, Role, Phone, Email)
+values('XYZ','xyz','31','Manager','1234567890', 'abc@gmail.com')
+
+select * from tblEmployee
+
+insert into tblSkill values ('C','PLT')
+insert into tblSkill values ('C++','OOPS')
+insert into tblSkill values ('Java','Web')
+insert into tblSkill values ('.NET','Web')
+insert into tblSkill values ('SQL','RDBMS')
+
+select * from tblSkill
+
+insert into tblEmployeeSkill values (101, 'C',9)
+insert into tblEmployeeSkill values (101, 'C++',8)
+insert into tblEmployeeSkill values (101, 'Java',7)
+
+select * from tblEmployeeSkill
+
+update tblEmployeeSkill set SkillLevel = 8 where EmpID=101 and Skill='Java'
+
+delete from tblEmployeeSkill where EmpID=101 and Skill='Java'
