@@ -35,3 +35,13 @@ Role varchar(15) check (role in ('Manager','Developer', 'Sr. Developer','Tester'
 )
 
 --sp_Help tblEmployee
+
+create table tblSkill
+(skillName varchar(20) constraint pk_skill primary key,
+skillDescription varchar(100))
+
+create table tblEmployeeSkill
+(EmpID int constraint fk_empSkill foreign key references tblEmployee(EmployeeID),
+Skill varchar(20) references tblSkill(skillName),
+SkillLevel float,
+primary key(EmpID, Skill))
