@@ -24,6 +24,7 @@ select title from titles where type in ('psychology','mod_cook')
 
 --7 print all titles published before '1991-06-09 00:00:00.000'
 select title from titles where pubdate < '1991-06-09' 
+--or select title from titles where pubdate < '1991-06-09 00:00:00.000'
 
 --8 select all the authors from 'CA'
 select * from authors where state ='CA'
@@ -38,9 +39,10 @@ from titles t right outer join publishers p on t.pub_id = p.pub_id
 group by p.pub_name
 
 --11 print the first published title in every type
-select type , min(pubdate) from titles  --no need title, titles table will do
+select type , min(pubdate) 'First published date' from titles  --no need title, titles table will do
 group by type
 --hint, group by type, min of published date
+--correct ans
 
 --12 calculate the total royalty for every publisher
 select sum(royalty) total_royalty, pub_name from titles t join publishers p on t.pub_id=p.pub_id
@@ -66,12 +68,13 @@ select CONCAT(a.au_fname, ' ', a.au_lname) Author_full_name, t.royalty from auth
 join titleauthor ta on a.au_id=ta.au_id
 join titles t on t.title_id=ta.title_id
 where t.royalty > (select avg(royalty) from titles)
+-- alternative ans can be selection in selection in selection
 
 --17 Print all the city and the number of pulishers in it, only if the city has more than one publisher
-select city, count(pub_id) from publishers 
+select city, count(pub_id) 'No of publisher' from publishers 
 group by city 
 having count(pub_id) > 1
-
+--correct
 
 --18) Print the total number of orders for every title
 select count (title_id) total_num_of_orders, title_id from sales
@@ -128,11 +131,16 @@ join stores st on st.stor_id=sa.stor_id
 group by stor_name,sa.stor_id 
 having count(ord_num)>2
 
+--alt
+select stor_id , count(ord_num) no_of_orders from sales 
+group by stor_id 
+having count(ord_num)>2
+
 --29) Select all the titles and print the first order date (titles that have not be ordered should also be present)
 select  title, min(ord_date) first_order_date from titles t
-full outer join sales s on s.title_id = t.title_id
+left outer join sales s on s.title_id = t.title_id
 group by title
-
+--full outer join also can
 
 --30) select all the data from teh orderes and the authors table --cross join
 select * from sales cross join authors
