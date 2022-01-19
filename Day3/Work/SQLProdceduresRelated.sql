@@ -1,6 +1,8 @@
 use Northwind
 --stored procedure
---triggerscursors
+--transactions
+--functions
+--triggers,cursors
 
 --batch
 begin
