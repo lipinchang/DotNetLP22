@@ -1,0 +1,6 @@
+D:\Downloads\DotnetLP22\Day5\Work\ArraySolution\UnderstandingArraysApplication\bin\Debug\UnderstandingArraysApplication.exe.config
+D:\Downloads\DotnetLP22\Day5\Work\ArraySolution\UnderstandingArraysApplication\bin\Debug\UnderstandingArraysApplication.exe
+D:\Downloads\DotnetLP22\Day5\Work\ArraySolution\UnderstandingArraysApplication\bin\Debug\UnderstandingArraysApplication.pdb
+D:\Downloads\DotnetLP22\Day5\Work\ArraySolution\UnderstandingArraysApplication\obj\Debug\UnderstandingArraysApplication.csproj.CoreCompileInputs.cache
+D:\Downloads\DotnetLP22\Day5\Work\ArraySolution\UnderstandingArraysApplication\obj\Debug\UnderstandingArraysApplication.exe
+D:\Downloads\DotnetLP22\Day5\Work\ArraySolution\UnderstandingArraysApplication\obj\Debug\UnderstandingArraysApplication.pdb

@@ -1,0 +1,7 @@
+D:\Downloads\DotnetLP22\Day5\Work\UnderstandingOOPSApplication\UnderstandingOOPSApplication\bin\Debug\UnderstandingOOPSApplication.exe.config
+D:\Downloads\DotnetLP22\Day5\Work\UnderstandingOOPSApplication\UnderstandingOOPSApplication\bin\Debug\UnderstandingOOPSApplication.exe
+D:\Downloads\DotnetLP22\Day5\Work\UnderstandingOOPSApplication\UnderstandingOOPSApplication\bin\Debug\UnderstandingOOPSApplication.pdb
+D:\Downloads\DotnetLP22\Day5\Work\UnderstandingOOPSApplication\UnderstandingOOPSApplication\obj\Debug\UnderstandingOOPSApplication.csproj.AssemblyReference.cache
+D:\Downloads\DotnetLP22\Day5\Work\UnderstandingOOPSApplication\UnderstandingOOPSApplication\obj\Debug\UnderstandingOOPSApplication.csproj.CoreCompileInputs.cache
+D:\Downloads\DotnetLP22\Day5\Work\UnderstandingOOPSApplication\UnderstandingOOPSApplication\obj\Debug\UnderstandingOOPSApplication.exe
+D:\Downloads\DotnetLP22\Day5\Work\UnderstandingOOPSApplication\UnderstandingOOPSApplication\obj\Debug\UnderstandingOOPSApplication.pdb
