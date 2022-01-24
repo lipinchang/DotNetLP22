@@ -9,7 +9,7 @@ namespace PizzaFEConsoleApp
 {
     internal class ManageCustomer
     {
-        Customer[] customers = new Customer[1];
+        Customer[] customers = new Customer[2];
         public void RegisterCustomer()
         {
             //customer.TakeCustomerDetailsFromUser();
@@ -39,7 +39,7 @@ namespace PizzaFEConsoleApp
         {
             //customer.PrintCustomerDetails();    //override will standardize ur code
             //Console.WriteLine(customer);   //basically to string by auto
-
+            Array.Sort(customers);    //sort objects
             for (int i = 0; i < customers.Length; i++)
             {
                 Console.WriteLine(customers[i]);

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PizzaModelsLibrary
 {
-    public class Customer
+    public class Customer :IComparable  
     {
         public int Id { get; set; }
         public string Name { get; set; }
@@ -36,7 +36,7 @@ namespace PizzaModelsLibrary
             Type = "Standard";
         }
 
-        public void TakeCustomerDetailsFromUser()   //has to be public for other proj to use
+        public virtual void TakeCustomerDetailsFromUser()   //has to be public for other proj to use
         {
             Console.WriteLine("Please enter the customer ID");
             Id = Convert.ToInt32(Console.ReadLine());
@@ -57,5 +57,20 @@ namespace PizzaModelsLibrary
             return "Customer ID " + Id + "\nCustomer Name " + Name + "\nCustomer Phone " + Phone+"\nCustomer Type "+Type;
 
         }
+
+        public int CompareTo(object obj)
+        {
+            Customer c1, c2;
+            c1 = this;
+            c2 = (Customer)obj;
+
+            //if (c1.Id < c2.Id)    //type one
+            //    return -1;
+            //else if (c1.Id > c2.Id) return 1;
+            //else return 0;
+
+            return c1.Id.CompareTo(c2.Id);    //type 2
+        }
+
     }
 }
