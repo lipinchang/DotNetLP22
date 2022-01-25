@@ -1,0 +1,7 @@
+D:\Downloads\DotnetLP22\Day7\Work\UnderstandingCollectionsSolution\UnderstandingCollectionsApp\bin\Debug\UnderstandingCollectionsApp.exe.config
+D:\Downloads\DotnetLP22\Day7\Work\UnderstandingCollectionsSolution\UnderstandingCollectionsApp\bin\Debug\UnderstandingCollectionsApp.exe
+D:\Downloads\DotnetLP22\Day7\Work\UnderstandingCollectionsSolution\UnderstandingCollectionsApp\bin\Debug\UnderstandingCollectionsApp.pdb
+D:\Downloads\DotnetLP22\Day7\Work\UnderstandingCollectionsSolution\UnderstandingCollectionsApp\obj\Debug\UnderstandingCollectionsApp.csproj.AssemblyReference.cache
+D:\Downloads\DotnetLP22\Day7\Work\UnderstandingCollectionsSolution\UnderstandingCollectionsApp\obj\Debug\UnderstandingCollectionsApp.csproj.CoreCompileInputs.cache
+D:\Downloads\DotnetLP22\Day7\Work\UnderstandingCollectionsSolution\UnderstandingCollectionsApp\obj\Debug\UnderstandingCollectionsApp.exe
+D:\Downloads\DotnetLP22\Day7\Work\UnderstandingCollectionsSolution\UnderstandingCollectionsApp\obj\Debug\UnderstandingCollectionsApp.pdb
