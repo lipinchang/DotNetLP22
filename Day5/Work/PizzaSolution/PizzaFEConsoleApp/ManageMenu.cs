@@ -57,7 +57,7 @@ namespace PizzaFEConsoleApp
 
             if (pizzas.Count == 0)
                 return 101;
-            return pizzas.Count+100;
+            return pizzas.Count+101;
 
         }
 
@@ -69,8 +69,16 @@ namespace PizzaFEConsoleApp
             //    if (pizzas[i].Id == id)
             //        pizza = pizzas[i];
             //}
-            Predicate<Pizza> findPizza = p => p.Id == id;
-            Pizza pizza = pizzas.Find(findPizza);  //leep interating until it get true. if false will return back null
+
+
+            //Predicate<Pizza> findPizza = p => p.Id == id;
+            //Pizza pizza = pizzas.Find(findPizza);  //keep interating until it get true. if false will return back null
+
+
+            //Pizza pizza = pizzas.Find(p => p.Id == id);
+
+            Pizza pizza = pizzas.SingleOrDefault(p => p.Id == id);
+
             return pizza;
         }
         public void EditPizzaPrice()
@@ -119,10 +127,19 @@ namespace PizzaFEConsoleApp
         {
             int id = GetIdFromUser();
             int idx = -1;
-            for (int i = 0; i < pizzas.Count; i++)
+            //for (int i = 0; i < pizzas.Count; i++)
+            //{
+            //    if (pizzas[i].Id == id)
+            //        idx = i;
+            //}
+
+            try
             {
-                if (pizzas[i].Id == id)
-                    idx = i;
+                idx = pizzas.SingleOrDefault(p => p.Id == id).Id;
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("no such pizza");
             }
 
             Pizza pizza = GetPizzaById(id);

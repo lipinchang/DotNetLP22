@@ -1,0 +1,7 @@
+D:\Downloads\DotnetLP22\Day8\Work\UnderstandingExceptionsSolution\UnderstandingExceptionsApp\bin\Debug\UnderstandingExceptionsApp.exe.config
+D:\Downloads\DotnetLP22\Day8\Work\UnderstandingExceptionsSolution\UnderstandingExceptionsApp\bin\Debug\UnderstandingExceptionsApp.exe
+D:\Downloads\DotnetLP22\Day8\Work\UnderstandingExceptionsSolution\UnderstandingExceptionsApp\bin\Debug\UnderstandingExceptionsApp.pdb
+D:\Downloads\DotnetLP22\Day8\Work\UnderstandingExceptionsSolution\UnderstandingExceptionsApp\obj\Debug\UnderstandingExceptionsApp.csproj.AssemblyReference.cache
+D:\Downloads\DotnetLP22\Day8\Work\UnderstandingExceptionsSolution\UnderstandingExceptionsApp\obj\Debug\UnderstandingExceptionsApp.csproj.CoreCompileInputs.cache
+D:\Downloads\DotnetLP22\Day8\Work\UnderstandingExceptionsSolution\UnderstandingExceptionsApp\obj\Debug\UnderstandingExceptionsApp.exe
+D:\Downloads\DotnetLP22\Day8\Work\UnderstandingExceptionsSolution\UnderstandingExceptionsApp\obj\Debug\UnderstandingExceptionsApp.pdb

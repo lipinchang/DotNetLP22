@@ -1,0 +1,7 @@
+D:\Downloads\DotnetLP22\Day8\Work\UnderstandingLINQSolution\UnderstandingLINQApp\bin\Debug\UnderstandingLINQApp.exe.config
+D:\Downloads\DotnetLP22\Day8\Work\UnderstandingLINQSolution\UnderstandingLINQApp\bin\Debug\UnderstandingLINQApp.exe
+D:\Downloads\DotnetLP22\Day8\Work\UnderstandingLINQSolution\UnderstandingLINQApp\bin\Debug\UnderstandingLINQApp.pdb
+D:\Downloads\DotnetLP22\Day8\Work\UnderstandingLINQSolution\UnderstandingLINQApp\obj\Debug\UnderstandingLINQApp.csproj.AssemblyReference.cache
+D:\Downloads\DotnetLP22\Day8\Work\UnderstandingLINQSolution\UnderstandingLINQApp\obj\Debug\UnderstandingLINQApp.csproj.CoreCompileInputs.cache
+D:\Downloads\DotnetLP22\Day8\Work\UnderstandingLINQSolution\UnderstandingLINQApp\obj\Debug\UnderstandingLINQApp.exe
+D:\Downloads\DotnetLP22\Day8\Work\UnderstandingLINQSolution\UnderstandingLINQApp\obj\Debug\UnderstandingLINQApp.pdb
