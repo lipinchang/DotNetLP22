@@ -12,7 +12,7 @@ namespace CSharpFeaturesApp
         {
             int num = int.MaxValue;
             Console.WriteLine(num);
-            checked
+            unchecked
             {
                 num++; 
                 Console.WriteLine(num);
@@ -37,7 +37,8 @@ namespace CSharpFeaturesApp
         {
             Program program = new Program();
             int v1 = 10, v2 = 0;
-            program.MethodWithOut(v1, out v2);
+            //program.MethodWithOut(v1, out v2);
+            program.UnderstandingCheckedBlocked();
             Console.WriteLine(v2);
             Console.ReadKey();
         }

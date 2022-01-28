@@ -35,9 +35,9 @@ namespace UnderstandingInterfaceApplication
 
             Bird bird = new Bird();
             Program program = new Program();
-            //program.ExploreForest(bird);
-            //program.CheckSky(bird);
-            program.SortAndPrintName();
+            program.ExploreForest(bird);
+            program.CheckSky(bird);
+            //program.SortAndPrintName();
             Console.ReadKey();
             
         }

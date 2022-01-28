@@ -11,8 +11,8 @@ namespace UnderstandingDelegatesApp
         static void Main(string[] args)
         {
             Sample s = new Sample();
-            //s.MyDel(10,20);
-            s.MyStringDel("hello ","world");
+            s.MyDel(10, 20);
+            //s.MyStringDel("hello ","world");
             Console.ReadKey();
         }
     }

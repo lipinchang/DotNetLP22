@@ -44,7 +44,7 @@ namespace UnderstandingCollectionsApp
         //queue is FIFO
         void UnderstandingQueue()  //for appointment
         {
-            Queue<string> names = new Queue<string>();   //LIFO
+            Queue<string> names = new Queue<string>();   
             names.Enqueue("Tim");
             names.Enqueue("Jim");
             foreach (var item in names)     //uses peek so it doesnt pop

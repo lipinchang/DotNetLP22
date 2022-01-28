@@ -14,7 +14,7 @@ namespace UnderstandingDelegatesApp
 
 
         ////public delegate void SampleDelegate(int n1, int n2);  //type for a method    for sharing of a method, so they cant see ur class
-        //public delegate void SampleDelegate<T>(T n1, T n2);  //type for a method    for sharing of a method, so they cant see ur class
+        //public delegate void SampleDelegate<T>(T n1, T n2);  //type for a method   
         ////public SampleDelegate MyDel;   //create ref for the type
         //public SampleDelegate<int> MyDel;   //create ref for the type
         //public SampleDelegate<string> MyStringDel;   //create ref for the type
