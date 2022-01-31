@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using PizzaDALLibrary;
 using PizzaModelsLibrary;
 
 namespace PizzaFEConsoleApp
@@ -11,7 +12,8 @@ namespace PizzaFEConsoleApp
     {
         //Pizza[] pizzas;
         List<Pizza> pizzas;
-
+        PizzaDAL pizzaDAL;
+        
         public Pizza this[int index]
         {
             get { return pizzas[index]; }
@@ -20,7 +22,26 @@ namespace PizzaFEConsoleApp
         public ManageMenu()
         {
             //pizzas = new Pizza[3];
-            pizzas = new List<Pizza>();
+            //pizzas = new List<Pizza>();
+            pizzaDAL = new PizzaDAL();
+        }
+
+        void GetAllPizzas()
+        {
+            pizzas = null;
+            try
+            {
+                pizzas = pizzaDAL.GetAllPizzas().ToList();
+            }
+            catch (NoPizzaException npe)
+            {
+                Console.WriteLine(npe.Message);
+            }
+            catch (Exception npe)
+            {
+                Console.WriteLine("Something went wrong. Will fix soon...");
+                Console.WriteLine(npe.Message);
+            }
         }
 
         public ManageMenu(int size)
@@ -37,29 +58,38 @@ namespace PizzaFEConsoleApp
             //    pizzas[i].GetPizzaDetails();
             //}
             Pizza pizza = new Pizza();
-            pizza.Id = GenerateId();
+            //pizza.Id = GenerateId();
             pizza.GetPizzaDetails();
-            pizzas.Add(pizza);
+            //pizzas.Add(pizza);
+            try
+            {
+                pizzaDAL.InsertNewPizza(pizza);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Could not add the pizza");
+                Console.WriteLine(e.Message);
+            }
         }
 
-        private int GenerateId()
-        {
-            //if (pizzas[0] == null)
-            //    return 101;
-            //else
-            //{
-            //    for (int i = 0; i < pizzas.Length; i++)
-            //    {
-            //        if (pizzas[i] == null)
-            //            return 101 + i;
-            //    }
-            //}
+        //private int GenerateId()
+        //{
+        //    //if (pizzas[0] == null)
+        //    //    return 101;
+        //    //else
+        //    //{
+        //    //    for (int i = 0; i < pizzas.Length; i++)
+        //    //    {
+        //    //        if (pizzas[i] == null)
+        //    //            return 101 + i;
+        //    //    }
+        //    //}
 
-            if (pizzas.Count == 0)
-                return 101;
-            return pizzas.Count+101;
+        //    if (pizzas.Count == 0)
+        //        return 101;
+        //    return pizzas.Count+101;
 
-        }
+        //}
 
         public Pizza GetPizzaById(int id)   //return pizza obj
         {
@@ -76,7 +106,7 @@ namespace PizzaFEConsoleApp
 
 
             //Pizza pizza = pizzas.Find(p => p.Id == id);
-
+            GetAllPizzas();
             Pizza pizza = pizzas.SingleOrDefault(p => p.Id == id);
 
             return pizza;
@@ -97,8 +127,8 @@ namespace PizzaFEConsoleApp
                 Console.WriteLine("Invalid entry for price. Please try again...");
             }
             pizza.Price = price;
-
-            Console.WriteLine("Updated. New details");
+            if (pizzaDAL.UpdatePizzaPrice(id, (float)price))
+                Console.WriteLine("Updated. New details");
             PrintPizza(pizza);
         }
 
@@ -168,8 +198,10 @@ namespace PizzaFEConsoleApp
         public void PrintPizzas()
         {
             //Array.Sort(pizzas);
-            pizzas.Sort();
-            foreach (var item in pizzas)
+            //pizzas.Sort();
+            GetAllPizzas();
+            var sortedPizzas = pizzas.OrderBy(p => p.Price);
+            foreach (var item in sortedPizzas)
             {
                 if(item!=null)
                 //Console.WriteLine(item);

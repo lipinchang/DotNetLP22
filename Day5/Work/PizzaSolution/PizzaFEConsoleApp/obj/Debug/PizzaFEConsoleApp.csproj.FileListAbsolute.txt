@@ -8,3 +8,5 @@ D:\Downloads\DotnetLP22\Day5\Work\PizzaSolution\PizzaFEConsoleApp\obj\Debug\Pizz
 D:\Downloads\DotnetLP22\Day5\Work\PizzaSolution\PizzaFEConsoleApp\bin\Debug\PizzaModelsLibrary.dll
 D:\Downloads\DotnetLP22\Day5\Work\PizzaSolution\PizzaFEConsoleApp\bin\Debug\PizzaModelsLibrary.pdb
 D:\Downloads\DotnetLP22\Day5\Work\PizzaSolution\PizzaFEConsoleApp\obj\Debug\PizzaFEConsoleApp.csproj.CopyComplete
+D:\Downloads\DotnetLP22\Day5\Work\PizzaSolution\PizzaFEConsoleApp\bin\Debug\PizzaDALLibrary.dll
+D:\Downloads\DotnetLP22\Day5\Work\PizzaSolution\PizzaFEConsoleApp\bin\Debug\PizzaDALLibrary.pdb

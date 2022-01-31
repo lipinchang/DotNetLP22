@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{224B3097-816F-4CD9-AA2B-CDFCFE5FB18C}</ProjectGuid>
+    <ProjectGuid>{83700EA9-9F11-43D4-8728-1A8EE0680CAA}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>PizzaModelsLibrary</RootNamespace>
-    <AssemblyName>PizzaModelsLibrary</AssemblyName>
+    <RootNamespace>PizzaDALLibrary</RootNamespace>
+    <AssemblyName>PizzaDALLibrary</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -32,6 +32,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -41,11 +42,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Customer.cs" />
-    <Compile Include="GoldCustomer.cs" />
-    <Compile Include="NoPizzaException.cs" />
-    <Compile Include="Pizza.cs" />
+    <Compile Include="MyConnection.cs" />
+    <Compile Include="PizzaDAL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PizzaModelsLibrary\PizzaModelsLibrary.csproj">
+      <Project>{224b3097-816f-4cd9-aa2b-cdfcfe5fb18c}</Project>
+      <Name>PizzaModelsLibrary</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
