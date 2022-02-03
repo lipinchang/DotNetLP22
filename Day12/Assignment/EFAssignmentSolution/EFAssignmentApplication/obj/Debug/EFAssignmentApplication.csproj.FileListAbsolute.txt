@@ -1,0 +1,12 @@
+D:\Downloads\DotnetLP22\Day12\Assignment\EFAssignmentSolution\EFAssignmentApplication\bin\Debug\EFAssignmentApplication.exe.config
+D:\Downloads\DotnetLP22\Day12\Assignment\EFAssignmentSolution\EFAssignmentApplication\bin\Debug\EFAssignmentApplication.exe
+D:\Downloads\DotnetLP22\Day12\Assignment\EFAssignmentSolution\EFAssignmentApplication\bin\Debug\EFAssignmentApplication.pdb
+D:\Downloads\DotnetLP22\Day12\Assignment\EFAssignmentSolution\EFAssignmentApplication\bin\Debug\EntityFramework.dll
+D:\Downloads\DotnetLP22\Day12\Assignment\EFAssignmentSolution\EFAssignmentApplication\bin\Debug\EntityFramework.SqlServer.dll
+D:\Downloads\DotnetLP22\Day12\Assignment\EFAssignmentSolution\EFAssignmentApplication\bin\Debug\EntityFramework.xml
+D:\Downloads\DotnetLP22\Day12\Assignment\EFAssignmentSolution\EFAssignmentApplication\bin\Debug\EntityFramework.SqlServer.xml
+D:\Downloads\DotnetLP22\Day12\Assignment\EFAssignmentSolution\EFAssignmentApplication\obj\Debug\EFAssignmentApplication.csproj.AssemblyReference.cache
+D:\Downloads\DotnetLP22\Day12\Assignment\EFAssignmentSolution\EFAssignmentApplication\obj\Debug\EFAssignmentApplication.csproj.CoreCompileInputs.cache
+D:\Downloads\DotnetLP22\Day12\Assignment\EFAssignmentSolution\EFAssignmentApplication\obj\Debug\EFAssignmentApplication.csproj.CopyComplete
+D:\Downloads\DotnetLP22\Day12\Assignment\EFAssignmentSolution\EFAssignmentApplication\obj\Debug\EFAssignmentApplication.exe
+D:\Downloads\DotnetLP22\Day12\Assignment\EFAssignmentSolution\EFAssignmentApplication\obj\Debug\EFAssignmentApplication.pdb

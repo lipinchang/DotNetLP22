@@ -1,0 +1,14 @@
+D:\Downloads\DotnetLP22\Day5\Work\PizzaSolution\PizzaDALEFLibrary\bin\Debug\PizzaDALEFLibrary.dll.config
+D:\Downloads\DotnetLP22\Day5\Work\PizzaSolution\PizzaDALEFLibrary\bin\Debug\PizzaDALEFLibrary.dll
+D:\Downloads\DotnetLP22\Day5\Work\PizzaSolution\PizzaDALEFLibrary\bin\Debug\PizzaDALEFLibrary.pdb
+D:\Downloads\DotnetLP22\Day5\Work\PizzaSolution\PizzaDALEFLibrary\bin\Debug\EntityFramework.dll
+D:\Downloads\DotnetLP22\Day5\Work\PizzaSolution\PizzaDALEFLibrary\bin\Debug\EntityFramework.SqlServer.dll
+D:\Downloads\DotnetLP22\Day5\Work\PizzaSolution\PizzaDALEFLibrary\bin\Debug\PizzaModelsLibrary.dll
+D:\Downloads\DotnetLP22\Day5\Work\PizzaSolution\PizzaDALEFLibrary\bin\Debug\PizzaModelsLibrary.pdb
+D:\Downloads\DotnetLP22\Day5\Work\PizzaSolution\PizzaDALEFLibrary\bin\Debug\EntityFramework.xml
+D:\Downloads\DotnetLP22\Day5\Work\PizzaSolution\PizzaDALEFLibrary\bin\Debug\EntityFramework.SqlServer.xml
+D:\Downloads\DotnetLP22\Day5\Work\PizzaSolution\PizzaDALEFLibrary\obj\Debug\PizzaDALEFLibrary.csproj.AssemblyReference.cache
+D:\Downloads\DotnetLP22\Day5\Work\PizzaSolution\PizzaDALEFLibrary\obj\Debug\PizzaDALEFLibrary.csproj.CoreCompileInputs.cache
+D:\Downloads\DotnetLP22\Day5\Work\PizzaSolution\PizzaDALEFLibrary\obj\Debug\PizzaDALEFLibrary.csproj.CopyComplete
+D:\Downloads\DotnetLP22\Day5\Work\PizzaSolution\PizzaDALEFLibrary\obj\Debug\PizzaDALEFLibrary.dll
+D:\Downloads\DotnetLP22\Day5\Work\PizzaSolution\PizzaDALEFLibrary\obj\Debug\PizzaDALEFLibrary.pdb

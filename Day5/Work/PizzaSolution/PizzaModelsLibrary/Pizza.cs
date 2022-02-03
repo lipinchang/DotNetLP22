@@ -48,5 +48,8 @@ namespace PizzaModelsLibrary
                 + "\nPizza is veg " + IsVeg
                 + "\nPizza Price " + Math.Round(Price,2);
         }
+
+        public ICollection<Cart> Carts { get; set; }
+      
     }
 }

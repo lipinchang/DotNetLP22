@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -7,8 +9,8 @@ using System.Threading.Tasks;
 namespace PizzaModelsLibrary
 {
     public class Customer :IComparable  
-    {
-        public int Id { get; set; }
+    {   [Key]
+        public int CustomerNumber { get; set; }
         public string Name { get; set; }
         public string Type { get; set; }
         string phone;
@@ -39,7 +41,7 @@ namespace PizzaModelsLibrary
         public virtual void TakeCustomerDetailsFromUser()   //has to be public for other proj to use
         {
             Console.WriteLine("Please enter the customer ID");
-            Id = Convert.ToInt32(Console.ReadLine());
+            CustomerNumber = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Please enter the Customer Name");
             Name = Console.ReadLine();
             Console.WriteLine("Please enter the Customer phone number");
@@ -48,13 +50,13 @@ namespace PizzaModelsLibrary
 
         public void PrintCustomerDetails()
         {
-            Console.WriteLine("Customer ID {0} Customer Name {1} Customer Phone {2}", Id, Name, Phone);
+            Console.WriteLine("Customer ID {0} Customer Name {1} Customer Phone {2}", CustomerNumber, Name, Phone);
         }
 
        
         public override string ToString()    //override normal tostring
         {
-            return "Customer ID " + Id + "\nCustomer Name " + Name + "\nCustomer Phone " + Phone+"\nCustomer Type "+Type;
+            return "Customer ID " + CustomerNumber + "\nCustomer Name " + Name + "\nCustomer Phone " + Phone+"\nCustomer Type "+Type;
 
         }
 
@@ -69,8 +71,12 @@ namespace PizzaModelsLibrary
             //else if (c1.Id > c2.Id) return 1;
             //else return 0;
 
-            return c1.Id.CompareTo(c2.Id);    //type 2
+            return c1.CustomerNumber.CompareTo(c2.CustomerNumber);    //type 2
         }
 
+        //public int CartNumber { get; set; }
+
+        //[ForeignKey("CartNumber")]    //one to one r/s one cust has one cart    one side can already
+        //public Cart MyCart { get; set; }    //ref for FE easily
     }
 }

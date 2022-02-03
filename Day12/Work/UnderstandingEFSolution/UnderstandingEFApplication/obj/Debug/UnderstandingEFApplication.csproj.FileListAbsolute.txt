@@ -1,0 +1,12 @@
+D:\Downloads\DotnetLP22\Day12\Work\UnderstandingEFSolution\UnderstandingEFApplication\bin\Debug\UnderstandingEFApplication.exe.config
+D:\Downloads\DotnetLP22\Day12\Work\UnderstandingEFSolution\UnderstandingEFApplication\bin\Debug\UnderstandingEFApplication.exe
+D:\Downloads\DotnetLP22\Day12\Work\UnderstandingEFSolution\UnderstandingEFApplication\bin\Debug\UnderstandingEFApplication.pdb
+D:\Downloads\DotnetLP22\Day12\Work\UnderstandingEFSolution\UnderstandingEFApplication\bin\Debug\EntityFramework.dll
+D:\Downloads\DotnetLP22\Day12\Work\UnderstandingEFSolution\UnderstandingEFApplication\bin\Debug\EntityFramework.SqlServer.dll
+D:\Downloads\DotnetLP22\Day12\Work\UnderstandingEFSolution\UnderstandingEFApplication\bin\Debug\EntityFramework.xml
+D:\Downloads\DotnetLP22\Day12\Work\UnderstandingEFSolution\UnderstandingEFApplication\bin\Debug\EntityFramework.SqlServer.xml
+D:\Downloads\DotnetLP22\Day12\Work\UnderstandingEFSolution\UnderstandingEFApplication\obj\Debug\UnderstandingEFApplication.csproj.AssemblyReference.cache
+D:\Downloads\DotnetLP22\Day12\Work\UnderstandingEFSolution\UnderstandingEFApplication\obj\Debug\UnderstandingEFApplication.csproj.CoreCompileInputs.cache
+D:\Downloads\DotnetLP22\Day12\Work\UnderstandingEFSolution\UnderstandingEFApplication\obj\Debug\UnderstandingEFApplication.csproj.CopyComplete
+D:\Downloads\DotnetLP22\Day12\Work\UnderstandingEFSolution\UnderstandingEFApplication\obj\Debug\UnderstandingEFApplication.exe
+D:\Downloads\DotnetLP22\Day12\Work\UnderstandingEFSolution\UnderstandingEFApplication\obj\Debug\UnderstandingEFApplication.pdb

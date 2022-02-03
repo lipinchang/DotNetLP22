@@ -8,5 +8,10 @@ D:\Downloads\DotnetLP22\Day5\Work\PizzaSolution\PizzaFEConsoleApp\obj\Debug\Pizz
 D:\Downloads\DotnetLP22\Day5\Work\PizzaSolution\PizzaFEConsoleApp\bin\Debug\PizzaModelsLibrary.dll
 D:\Downloads\DotnetLP22\Day5\Work\PizzaSolution\PizzaFEConsoleApp\bin\Debug\PizzaModelsLibrary.pdb
 D:\Downloads\DotnetLP22\Day5\Work\PizzaSolution\PizzaFEConsoleApp\obj\Debug\PizzaFEConsoleApp.csproj.CopyComplete
-D:\Downloads\DotnetLP22\Day5\Work\PizzaSolution\PizzaFEConsoleApp\bin\Debug\PizzaDALLibrary.dll
-D:\Downloads\DotnetLP22\Day5\Work\PizzaSolution\PizzaFEConsoleApp\bin\Debug\PizzaDALLibrary.pdb
+D:\Downloads\DotnetLP22\Day5\Work\PizzaSolution\PizzaFEConsoleApp\bin\Debug\PizzaDALEFLibrary.dll
+D:\Downloads\DotnetLP22\Day5\Work\PizzaSolution\PizzaFEConsoleApp\bin\Debug\EntityFramework.dll
+D:\Downloads\DotnetLP22\Day5\Work\PizzaSolution\PizzaFEConsoleApp\bin\Debug\PizzaDALEFLibrary.pdb
+D:\Downloads\DotnetLP22\Day5\Work\PizzaSolution\PizzaFEConsoleApp\bin\Debug\PizzaDALEFLibrary.dll.config
+D:\Downloads\DotnetLP22\Day5\Work\PizzaSolution\PizzaFEConsoleApp\bin\Debug\EntityFramework.xml
+D:\Downloads\DotnetLP22\Day5\Work\PizzaSolution\PizzaFEConsoleApp\bin\Debug\EntityFramework.SqlServer.dll
+D:\Downloads\DotnetLP22\Day5\Work\PizzaSolution\PizzaFEConsoleApp\bin\Debug\EntityFramework.SqlServer.xml
