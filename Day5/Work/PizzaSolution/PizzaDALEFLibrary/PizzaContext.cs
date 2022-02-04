@@ -14,10 +14,10 @@ namespace PizzaDALEFLibrary
         {
 
         }
-        public DbSet<Pizza> Pizzas { get; set; }
-        public DbSet<Customer> Customers { get; set; }
-        public DbSet<Cart> Carts { get; set; }
-        public DbSet<CartPizzas> CartPizzas { get; set; }
+        public virtual  DbSet<Pizza> Pizzas { get; set; }
+        public virtual DbSet<Customer> Customers { get; set; }
+        public virtual DbSet<Cart> Carts { get; set; }
+        public virtual DbSet<CartPizzas> CartPizzas { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

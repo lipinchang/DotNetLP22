@@ -15,7 +15,7 @@ namespace PizzaModelsLibrary
         public int CustomerNumber { get; set; }
 
         [ForeignKey("CustomerNumber")]
-        public Customer Customer { get; set; }
+        public virtual Customer Customer { get; set; }
         public ICollection<Pizza> Pizzas { get; set; }
     }
 }
