@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        body{
+            background-color:antiquewhite;
+        }
+        #divLogin{
+            /*border: double 2px brown;*/
+            border-style:double;
+            border-width:4px;
+            border-color:yellow brown blue magenta;
+            width:350px;
+            height:120px;
+            left:600px;
+            position:absolute;
+            top:250px;
+            border-radius:20px;
+            padding:20px 10px;
+
+            /*top right bottom left*/
+        }
+        .clsInput{
+            position:absolute;
+            left:180px;
+        }
+        #spanButtons{
+            position:absolute;
+            left:100px;
+        }
+        .clsButton {
+            border-radius: 50%;
+            background-color: #008CBA;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!--<div>
+    <form action="Home.html">
+        <table>
+            <tr>
+                <td>Name:</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Password:</td>
+                <td><input type="password"></td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="Login" /></td>
+                <td><input type="reset" value="Cancel" /></td>
+            </tr>
+        </table>
+    </form>
+    </div>-->
+
+    <div id="divLogin">
+        <form action="Home.html">
+            <label>Username</label>
+            <input class="clsInput" required type="text" />
+            <br /><br />
+            <label>Password</label>
+            <input class="clsInput" pattern="[A-Za-z][A-Za-z]*[0-9]*" type="password" />
+            <!--regex regular expression complex password/email. pls use it-->
+            <br /><br />
+           
+            
+            <span id="spanButtons">
+                <input class="clsButton" type="submit" value="Login" />
+                &nbsp;
+                <input class="clsButton" type="reset" value="Cancel" />
+            </span>
+        </form>
+    </div>
+</body>
+</html>

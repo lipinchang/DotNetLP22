@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <style>
+        .divBody {
+            width: 450px;
+            height: 750px;
+            left: 600px;
+            position: absolute;
+            border-color: lightpink;
+            top:50px;
+        }
+
+        table, td, thead, th, tr {
+            border: 1px solid rgb(190, 190, 190);
+            padding: 5px 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="divBody">
+        <form onsubmit="return false">
+        <label class="form-label">Name</label>
+        <input id="txtName" class="form-control" type="text" />
+        <br />
+        <label class="form-label">Phone</label>
+        <input id="txtPhone" class="form-control" maxlength="8" type="text" />
+        <br />
+        <button class="btn btn-success" onclick="addAndDisplay();">Add</button>
+        &nbsp;
+        <input class="btn btn-danger" type="reset" value="Cancel" />
+        <br /><br />
+        <table id="myTable">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Phone</th>
+
+                </tr>
+            </thead>
+
+        </table>
+
+        <script>
+            function addAndDisplay() {
+                var name = document.getElementById("txtName");
+                var phone = document.getElementById("txtPhone");
+                if (name.value == "") {
+                    alert('Name cannot be empty');
+                    name.focus();
+                    Event.stopPropagation();
+                }
+                if (phone.value == "") {
+                    alert('Phone cannot be empty');
+                    phone.focus();
+                    Event.stopPropagation();
+                }
+                var table = document.getElementById("myTable");
+                var row = table.insertRow(-1);
+                var cell1 = row.insertCell(0);
+                var cell2 = row.insertCell(1);
+                cell1.innerHTML = name.value;
+                cell2.innerHTML = phone.value;
+            }
+        </script>
+        </form>
+
+    </div>
+
+</body>
+</html>

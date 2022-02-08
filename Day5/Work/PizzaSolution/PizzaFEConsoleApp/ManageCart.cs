@@ -11,10 +11,11 @@ namespace PizzaFEConsoleApp
     {
         public void PrintCart()
         {
-            Console.WriteLine("Enter the customer number");
+            Console.WriteLine("Enter teh customer number");
             int id = Convert.ToInt32(Console.ReadLine());
-            CartDAL cartDAL = new CartDAL();
-            cartDAL.GetCart(1);
+            CartDAL cart = new CartDAL();
+            cart.GetCart(id);
+
         }
     }
 }
