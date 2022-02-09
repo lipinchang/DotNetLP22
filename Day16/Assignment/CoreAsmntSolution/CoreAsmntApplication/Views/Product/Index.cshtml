@@ -1,0 +1,64 @@
+﻿@model IEnumerable<CoreAsmntApplication.Models.Product>
+
+    @*<a href="Pizza/Create">Add a Pizza</a>*@
+    @Html.ActionLink("Add a Product","Create","Product")
+    <table class="table table-striped">
+        <thead>
+             <tr>
+               <th>
+                  Id
+               </th>
+               <th>
+                   Name
+               </th>
+               <th>
+                  Price
+               </th>
+               <th>
+                  SupplierId
+               </th>
+               <th>
+                  Quantity
+               </th>
+               <th>
+                  Remarks
+               </th>
+               <th>  
+                Action To be Taken  
+                </th>  
+           </tr>
+        </thead>
+      <tbody>
+           @foreach (var item in Model)
+       {
+           <tr>
+               <td>
+                   @item.Id
+               </td>
+               <td>
+                   @item.Name
+               </td>
+               <td>
+                   @item.Price
+               </td>
+               <td>
+                   @item.SupplierId
+               </td>
+               <td>
+                   @item.Quantity
+               </td>
+
+               <td>
+                   @item.Remarks
+               </td>
+              
+               <td>  
+                    @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |  
+                    @Html.ActionLink("Details", "Details", new { id=item.Id }) 
+                    @*@Html.ActionLink("Delete", "Delete", new { id=item.StudentID })  *@
+</td>  
+           </tr>
+       }
+      </tbody>
+    </table>
+

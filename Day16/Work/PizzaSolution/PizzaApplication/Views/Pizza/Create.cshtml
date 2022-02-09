@@ -1,0 +1,31 @@
+﻿@model PizzaApplication.Models.Pizza
+
+@*<form action="Create" method="post">
+    <label class="form-control">Pizza ID</label>
+    <input type="number" name=id class="form-control"/>
+    <label class="form-control">Pizza Name</label>
+    <input type="text" name=name class="form-control"/>
+    <label class="form-control">Pizza Price</label>
+    <input type="number" name=price class="form-control"/>
+    <label class="form-control">Is veg?</label>
+    
+    <div class="checkbox">
+        <label><input type="checkbox" name="IsVeg" /></label>
+    </div>
+    <input type="submit" value="Create Pizza" class="btn btn-success" />
+</form>*@
+
+@*html helper class*@
+    @Html.ActionLink("Back","Index","Pizza")   @*pizza is your views folder*@
+@using(Html.BeginForm("Create","Pizza",FormMethod.Post)){
+    @Html.LabelFor(m=>Model.Id, htmlAttributes:new{@class="form-control"})
+    @Html.EditorFor(m=>m.Id, new{@htmlAttributes=new {@class="form-control"}})
+    @Html.LabelFor(m=>Model.Name, htmlAttributes:new{@class="form-control"})
+    @Html.EditorFor(m=>m.Name, new{@htmlAttributes=new {@class="form-control"}})
+    @Html.LabelFor(m=>Model.Price, htmlAttributes:new{@class="form-control"})
+    @Html.EditorFor(m=>m.Price, new{@htmlAttributes=new {@class="form-control"}})
+    @Html.LabelFor(m=>Model.IsVeg, htmlAttributes:new{@class="form-control"})
+    @Html.CheckBoxFor(m=>m.IsVeg,new {@checked=Model.IsVeg})
+
+    <input type="submit" value="Create Pizza" class="btn btn-success" />
+}

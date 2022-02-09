@@ -1,0 +1,22 @@
+﻿@model CoreAsmntApplication.Models.Product
+<h2>Edit</h2>
+@Html.ActionLink("Back","Index","Product")
+<br />
+<br />
+@using(Html.BeginForm("Edit","Product",FormMethod.Post)){
+   @* @Html.LabelFor(model => model.Id, htmlAttributes:new{@class="form-control"})*@
+    @Html.HiddenFor(m => m.Id, new{@htmlAttributes=new {@class="form-control"}})
+           
+    @Html.LabelFor(m=>Model.Name, htmlAttributes:new{@class="form-control"})
+    @Html.EditorFor(m=>m.Name, new{@htmlAttributes=new {@class="form-control"}})
+    @Html.LabelFor(m=>Model.Price, htmlAttributes:new{@class="form-control"})
+    @Html.EditorFor(m=>m.Price, new{@htmlAttributes=new {@class="form-control"}})
+    @Html.LabelFor(m=>Model.SupplierId, htmlAttributes:new{@class="form-control"})
+    @Html.EditorFor(m=>m.SupplierId, new{@htmlAttributes=new {@class="form-control"}})
+    @Html.LabelFor(m=>Model.Quantity, htmlAttributes:new{@class="form-control"})
+    @Html.EditorFor(m=>m.Quantity, new{@htmlAttributes=new {@class="form-control"}})
+    @Html.LabelFor(m=>Model.Remarks, htmlAttributes:new{@class="form-control"})
+    @Html.EditorFor(m=>m.Remarks, new{@htmlAttributes=new {@class="form-control"}})
+    <br />
+    <input type="submit" value="Save Product" class="btn btn-success" />
+}
