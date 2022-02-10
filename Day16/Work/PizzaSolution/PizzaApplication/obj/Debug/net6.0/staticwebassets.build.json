@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "A4NEn2ZaBDydrMF2QCa4RzOEWq8c7OTjkgCb4jSqssA=",
+  "Hash": "aKQdcJNApLM3j5/h+nFqvDeQjph/5U7VSD1QY9iZ3wI=",
   "Source": "PizzaApplication",
   "BasePath": "_content/PizzaApplication",
   "Mode": "Default",
@@ -83,6 +83,57 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "D:\\Downloads\\DotnetLP22\\Day16\\Work\\PizzaSolution\\PizzaApplication\\wwwroot\\images\\pizza1.jpg",
+      "SourceId": "PizzaApplication",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Downloads\\DotnetLP22\\Day16\\Work\\PizzaSolution\\PizzaApplication\\wwwroot\\",
+      "BasePath": "_content/PizzaApplication",
+      "RelativePath": "images/pizza1.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\pizza1.jpg"
+    },
+    {
+      "Identity": "D:\\Downloads\\DotnetLP22\\Day16\\Work\\PizzaSolution\\PizzaApplication\\wwwroot\\images\\pizza2.jpg",
+      "SourceId": "PizzaApplication",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Downloads\\DotnetLP22\\Day16\\Work\\PizzaSolution\\PizzaApplication\\wwwroot\\",
+      "BasePath": "_content/PizzaApplication",
+      "RelativePath": "images/pizza2.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\pizza2.jpg"
+    },
+    {
+      "Identity": "D:\\Downloads\\DotnetLP22\\Day16\\Work\\PizzaSolution\\PizzaApplication\\wwwroot\\images\\pizza3.jpg",
+      "SourceId": "PizzaApplication",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Downloads\\DotnetLP22\\Day16\\Work\\PizzaSolution\\PizzaApplication\\wwwroot\\",
+      "BasePath": "_content/PizzaApplication",
+      "RelativePath": "images/pizza3.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\pizza3.jpg"
     },
     {
       "Identity": "D:\\Downloads\\DotnetLP22\\Day16\\Work\\PizzaSolution\\PizzaApplication\\wwwroot\\js\\site.js",
@@ -1069,6 +1120,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Identity": "D:\\Downloads\\DotnetLP22\\Day16\\Work\\PizzaSolution\\PizzaApplication\\wwwroot\\pages\\homepage.html",
+      "SourceId": "PizzaApplication",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Downloads\\DotnetLP22\\Day16\\Work\\PizzaSolution\\PizzaApplication\\wwwroot\\",
+      "BasePath": "_content/PizzaApplication",
+      "RelativePath": "pages/homepage.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\pages\\homepage.html"
     }
   ]
 }

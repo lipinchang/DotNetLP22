@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "c43216d7-e9b4-4248-88d3-9b94f4df73f6": {
+      "ProjectGuid": "c43216d7-e9b4-4248-88d3-9b94f4df73f6",
+      "DisplayName": "CoreAsmntApplication",
+      "ColorIndex": 0
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    }
+  },
+  "NextColorIndex": 1
+}
