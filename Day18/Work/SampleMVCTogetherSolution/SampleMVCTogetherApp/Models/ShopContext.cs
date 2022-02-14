@@ -10,6 +10,7 @@ namespace SampleMVCTogetherApp.Models
         }
 
         public DbSet<Customer> Customers { get; set; }  //table name, creating table
+        public DbSet<User> Users { get; set; }  //table name, creating table
         protected override void OnModelCreating(ModelBuilder modelBuilder)   //override onmodel tab
         {
             modelBuilder.Entity<Customer>().HasData(

@@ -54,6 +54,40 @@ namespace SampleMVCTogetherApp.Migrations
                             Name = "Jim"
                         });
                 });
+
+            modelBuilder.Entity("SampleMVCTogetherApp.Models.User", b =>
+                {
+                    b.Property<string>("Username")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<int>("CustomerId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Password")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Role")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Username");
+
+                    b.HasIndex("CustomerId");
+
+                    b.ToTable("Users");
+                });
+
+            modelBuilder.Entity("SampleMVCTogetherApp.Models.User", b =>
+                {
+                    b.HasOne("SampleMVCTogetherApp.Models.Customer", "Customer")
+                        .WithMany()
+                        .HasForeignKey("CustomerId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Customer");
+                });
 #pragma warning restore 612, 618
         }
     }

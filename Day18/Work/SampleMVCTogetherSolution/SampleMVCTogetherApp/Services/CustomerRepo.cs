@@ -9,11 +9,11 @@ namespace SampleMVCTogetherApp.Services
         {
             _context = context;
         }
-        public bool Add(Customer item)
+        public Customer Add(Customer item)
         {
             _context.Customers.Add(item);
             _context.SaveChanges();
-            return true;
+            return item;
         }
 
         public ICollection<Customer> GetAll()
