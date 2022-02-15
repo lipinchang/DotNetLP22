@@ -18,6 +18,17 @@ namespace SampleMVCTogetherApp.Controllers
             return View();
         }
 
+        public IActionResult ShowProducts()
+        {
+            List<Product> products=new List<Product>()
+            {
+                new Product(){Id=1, Name="qwe" },
+                new Product(){Id=2, Name="asd"}
+            };
+            ViewBag.Username = HttpContext.Session.GetString("un");   //get session to set to viewbag.username
+            return View(products);
+        }
+
         public IActionResult Privacy()
         {
             return View();

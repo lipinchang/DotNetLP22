@@ -4,12 +4,16 @@ using SampleMVCTogetherApp.Models;
 
 namespace SampleMVCTogetherApp.Services
 {
-    public class UserRepo : IAdding<string, User>
+    public class UserRepo : IRepo<string, User>
     {
         private readonly ShopContext _context;
         public UserRepo(ShopContext context)
         {
             _context = context;
+        }
+        public UserRepo()
+        {
+            
         }
         public User Add(User item)
         {
@@ -29,6 +33,25 @@ namespace SampleMVCTogetherApp.Services
             return null;
         }
 
-        
+        public virtual User Get(string id)
+        {
+            var user = _context.Users.SingleOrDefault(u => u.Username == id);
+            return user;
+        }
+
+        public ICollection<User> GetAll()
+        {
+            throw new NotImplementedException();
+        }
+
+        public bool Remove(string id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public bool Update(User item)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

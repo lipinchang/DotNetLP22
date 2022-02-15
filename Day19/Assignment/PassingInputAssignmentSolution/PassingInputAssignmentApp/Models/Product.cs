@@ -14,5 +14,6 @@ namespace PassingInputAssignmentApp.Models
         public int Quantity { get; set; }
         public string Pic { get; set; }
         public string Description { get; set; }
+        
     }
 }

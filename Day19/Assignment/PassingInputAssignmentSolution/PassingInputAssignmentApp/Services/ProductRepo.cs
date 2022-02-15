@@ -9,6 +9,10 @@ namespace PassingInputAssignmentApp.Services
         {
             _context = context;
         }
+        public ProductRepo()
+        {
+
+        }
 
         public Product Add(Product item)
         {
@@ -17,7 +21,7 @@ namespace PassingInputAssignmentApp.Services
             return item;
         }
 
-        public Product Get(int id)
+        public virtual Product Get(int id)
         {
             Product product = _context.Products.FirstOrDefault(x => x.Id == id);
             return product;
