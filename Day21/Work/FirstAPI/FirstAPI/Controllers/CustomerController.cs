@@ -19,15 +19,16 @@ namespace FirstAPI.Controllers
             return _customers;
         }
         [HttpPut]
-        public Customer Put(int id, Customer cust)   //update    //in postman to put in parameter id(3) and body(one customer obj id 3 in json)
+        public ActionResult Put(int id, Customer cust)   //update    //in postman to put in parameter id(3) and body(one customer obj id 3 in json)
         {
             var customer=_customers.SingleOrDefault(c=> c.Id == id);
             if (customer != null)
             {
                 customer.Name = cust.Name;
                 customer.Age = cust.Age;
+                return Created("Updated", customer);
             }
-            return customer;
+            return NotFound();
         }
         [HttpDelete]
         public Customer Delete(int id)
@@ -43,9 +44,12 @@ namespace FirstAPI.Controllers
 
         [HttpGet]
         [Route("SingleEmployee")]
-        public Customer Get(int id)
+        public ActionResult Get(int id)
         {
-            return _customers.SingleOrDefault(c => c.Id == id);
+            var customer = _customers.SingleOrDefault(c => c.Id == id);
+            if(customer == null)
+                return NotFound();
+            return Ok(customer);
         }
         [HttpPost]
         public Customer Post(Customer customer)

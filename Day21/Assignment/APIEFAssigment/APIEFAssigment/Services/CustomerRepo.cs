@@ -20,28 +20,32 @@ namespace APIEFAssigment.Models
             return item;
         }
 
-        public Customer Get(int id)
+        public Customer GetT(int id)
         {
-            Customer customer = _context.Customers.FirstOrDefault(x => x.Id == id);
+            var customer = _context.Customers.FirstOrDefault(x => x.Id == id);
             return customer;
         }
 
-        public ICollection<Customer> GetAll()
+        public IEnumerable<Customer> GetAll()
         {
             return _context.Customers.ToList();
         }
 
-        public bool Remove(int id)
+        public Customer Delete(int key)
         {
-            Customer customer = Get(id);
-            _context.Customers.Remove(customer);
-            _context.SaveChanges();
-            return true;
+            var customer = _context.Customers.SingleOrDefault(c => c.Id == key);
+            if (customer != null)
+            {
+                _context.Customers.Remove(customer);
+                _context.SaveChanges();
+            }
+            return customer;
+
         }
 
-        public bool Update(Customer item)
+        public Customer Update(Customer item)
         {
-            Customer customer = _context.Customers.FirstOrDefault(x => x.Id == item.Id);
+            var customer = _context.Customers.FirstOrDefault(x => x.Id == item.Id);
             if (customer != null)
             {
                 customer.Name = item.Name;
@@ -49,9 +53,9 @@ namespace APIEFAssigment.Models
                
                 _context.Customers.Update(customer);
                 _context.SaveChanges();
-                return true;
+               
             }
-            return false;
+            return customer;
         }
     }
 }

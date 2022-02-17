@@ -1,11 +1,11 @@
 ﻿namespace APIEFAssigment.Services
 {
-    public interface IRepo<K, T>
+    public interface IRepo<K, T> where T : class
     {
-        ICollection<T> GetAll();
-        T Get(K k);
         T Add(T item);
-        bool Remove(K id);
-        bool Update(T item);
+        T Update(T item);
+        T Delete(K key);
+        IEnumerable<T> GetAll();
+        T GetT(K key);
     }
 }
