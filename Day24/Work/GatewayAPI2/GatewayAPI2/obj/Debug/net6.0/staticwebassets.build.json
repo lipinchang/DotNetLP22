@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "ioN/LNeTX+RFJ4m6+nGw/m0/1fDKl7RGHgSjbt3qBJ0=",
+  "Source": "GatewayAPI2",
+  "BasePath": "_content/GatewayAPI2",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

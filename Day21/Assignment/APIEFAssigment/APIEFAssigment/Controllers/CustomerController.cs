@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace APIEFAssigment.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/[controller]")]    //Attribute based routing
     [ApiController]
     public class CustomerController : ControllerBase
     {

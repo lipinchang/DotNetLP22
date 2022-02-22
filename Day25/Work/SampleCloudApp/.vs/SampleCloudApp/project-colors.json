@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "232329ae-6784-4c89-9d99-d4afab021a2c": {
+      "ProjectGuid": "232329ae-6784-4c89-9d99-d4afab021a2c",
+      "DisplayName": "SampleCloudApp",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}

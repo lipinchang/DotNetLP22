@@ -7,5 +7,6 @@
         Task<T> Delete(K key);
         Task<T> Add(T item);
         Task<T> Update(T item);
+        void GetToken(string token);
     }
 }

@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "Mt6iomLSKZRY+zA4dQny31Ss/A67o9c5mS9t7rUAzizAa6OsfCu23kyUj/gAdyfX5bxsRTTzFxMcZY05p6g48g==",
+  "success": true,
+  "projectFilePath": "D:\\Downloads\\DotnetLP22\\Day24\\Work\\GatewayAPI2\\GatewayAPI2\\GatewayAPI2.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\lpsam\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\lpsam\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\lpsam\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\lpsam\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
+    "C:\\Users\\lpsam\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
+    "C:\\Users\\lpsam\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.3\\swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
+    "C:\\Users\\lpsam\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.2.3\\swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
+  ],
+  "logs": []
+}
